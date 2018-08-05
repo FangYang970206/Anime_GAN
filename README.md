@@ -1,6 +1,5 @@
 # Anime_GAN
 This repository records my GAN models with Anime. 
----
 
 # Dependencies
 * [Python 3.6+](https://www.continuum.io/downloads)
