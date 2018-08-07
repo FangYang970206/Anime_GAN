@@ -117,7 +117,7 @@ def main():
         with open("discriminator_loss.txt", 'a+') as f:
             f.write("loss_D:{} \n".format(loss_D.item()))
 
-        if (epoch+1) % 20 == 0:
+        if epoch % 20 == 0:
 
             torch.save(generate, os.path.join(os.getcwd(), "saved/generate.t7"))
             torch.save(discriminator, os.path.join(os.getcwd(), "saved/discriminator.t7"))
