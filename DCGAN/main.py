@@ -29,6 +29,8 @@ def main():
                         help="number of parallel data loading processing")
     parse.add_argument("--size_per_dataset", type=int, default=30000,
                         help="number of training data")
+    parse.add_argument("--pre_train", type=bool, default=False,
+                        help="whether load pre_train model")
 
     args = parse.parse_args()
 
@@ -48,12 +50,12 @@ def main():
         print("Don't find the dataset directory, please copy the link in website ,download and extract faces.tar.gz .\n \
         https://drive.google.com/drive/folders/1mCsY5LEsgCnc0Txv0rpAUhKVPWVkbw5I \n ")
         exit()
-
-    # generate = torch.load("saved/generate.t7").to(device)
-    # discriminator = torch.load("saved/discriminator.t7").to(device)
-    
-    generate = Generate().to(device)
-    discriminator = Discriminator().to(device)
+    if args.pre_train:
+        generate = torch.load("saved/generate.t7").to(device)
+        discriminator = torch.load("saved/discriminator.t7").to(device)
+    else:
+        generate = Generate().to(device)
+        discriminator = Discriminator().to(device)
 
     generate.apply(weight_init)
     discriminator.apply(weight_init)
