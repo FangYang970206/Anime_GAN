@@ -9,7 +9,7 @@ This repository records my GAN models with Anime.
 * [tqdm 4.24.0](https://pypi.org/project/tqdm/)
 
 # How to use DCGAN with Anime
-you need to download the [dataset](https://drive.google.com/drive/folders/1mCsY5LEsgCnc0Txv0rpAUhKVPWVkbw5I) named **faces.tar.gz**, and extract and move it in `Anime_GAN/DCGAN/`.
+you need to download the [dataset](https://drive.google.com/drive/folders/1mCsY5LEsgCnc0Txv0rpAUhKVPWVkbw5I) named **faces.tar.gz**, and extract and move it in `Anime_GAN-master/DCGAN/`.
 ## 1. Cloning the repository
 ```bash
 $ git clone https://github.com/FangYang970206/Anime_GAN.git
