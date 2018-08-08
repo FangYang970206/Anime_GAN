@@ -13,7 +13,7 @@ you need to download the [dataset](https://drive.google.com/drive/folders/1mCsY5
 ## 1. Cloning the repository
 ```bash
 $ git clone https://github.com/FangYang970206/Anime_GAN.git
-$ cd Anime_GAN/DCGAN/
+$ cd Anime_GAN-master/DCGAN/
 ```
 ## 2. run the code
 ```bash
