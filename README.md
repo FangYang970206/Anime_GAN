@@ -8,7 +8,7 @@ This repository records my GAN models with Anime.
 * [imageio 2.3.0](https://pypi.org/project/imageio/)
 * [tqdm 4.24.0](https://pypi.org/project/tqdm/)
 
-# How to use DCGAN with Anime
+# DCGAN
 you need to download the [dataset](https://drive.google.com/drive/folders/1mCsY5LEsgCnc0Txv0rpAUhKVPWVkbw5I) named **faces.tar.gz**, and extract and move it in `Anime_GAN-master/DCGAN/`.
 ## 1. Cloning the repository
 ```bash
@@ -19,3 +19,5 @@ $ cd Anime_GAN/DCGAN/
 ```bash
 $ python main.py 
 ```
+## 3. 500 epochs result
+![](result/DCGAN_500.png)
