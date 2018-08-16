@@ -21,7 +21,7 @@ def main():
                         help="adam optimizer parameter")
     parse.add_argument("--batch_size", type=int, default=64,
                         help="number of dataset in every train or test iteration")
-    parse.add_argument("--dataset", type=str, default="anime",
+    parse.add_argument("--dataset", type=str, default="faces",
                         help="base path for dataset")
     parse.add_argument("--epochs", type=int, default=500,
                         help="number of training epochs")
