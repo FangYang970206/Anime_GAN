@@ -61,14 +61,14 @@ def main():
     optimizer_D = RMSprop(discriminator.parameters(), lr=args.lr)
 
     fixed_noise = torch.randn(64, 100, 1, 1).to(device)
-
+    step = 0
     for epoch in range(args.epochs):
 
         print("Main epoch{}:".format(epoch))
         progress = tqdm(total=len(dataload.dataset))
         
         for i, inp in enumerate(dataload):
-
+            step += 1
             # train discriminator   
             real_data = inp.float().to(device)
             noise = torch.randn(inp.size()[0], 100, 1, 1).to(device)
@@ -84,7 +84,7 @@ def main():
                 param.data.clamp_(-args.clamp, args.clamp)
 
             #train generate
-            if epoch%5 == 0:
+            if step%5 == 0:
                 optimizer_G.zero_grad()
                 fake_data = generate(noise)
                 fake_output = -torch.mean(discriminator(fake_data).squeeze())
