@@ -61,10 +61,12 @@ $ python main.py --mode "infer"
 * [DCGAN paper][2]
 * [chenyuntc][3]
 * [JasonYao81000][4]
-
+* [tjwei][5]
 
 
   [1]: http://speech.ee.ntu.edu.tw/~tlkagk/courses_MLDS18.html
   [2]: http://arxiv.org/abs/1511.06434
   [3]: https://github.com/chenyuntc/pytorch-GAN
   [4]: https://github.com/JasonYao81000/MLDS2018SPRING/tree/master/hw3
+  [5]: https://github.com/tjwei/GANotebooks/blob/master/wgan2-keras.ipynb
+  
