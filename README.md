@@ -9,6 +9,7 @@ This repository records my GAN models with Anime.
 * [tqdm 4.24.0](https://pypi.org/project/tqdm/)
 * [keras 2.1.2](https://keras.io/#installation)(for WGAN_keras)
 * [tensorflow 1.2.1](https://www.tensorflow.org/install/)(for WGAN_keras)
+* cv2 -- `pip install opencv-python`(for ConditionalGAN)
 
 # DCGAN
 you need to download the [dataset](https://1drv.ms/u/s!AgBYzHhocQD4g0_Fr-mC-DYfWahJ) named **faces.zip**, then execute the first step——Cloning the repository, and extract and move it in `Anime_GAN-master/DCGAN/`.
@@ -26,7 +27,7 @@ $ python main.py
 ---
 # WGAN
 The WGAN implemented by pytorch has bugs. If anyone can find them, i will appreciate you so much! 
-I implement a keras version Anime_WGAN. Like DCGAN, you should download the [dataset](https://1drv.ms/u/s!AgBYzHhocQD4g0_Fr-mC-DYfWahJ) named **faces.zip**, then execute the first step——Cloning the repository, and extract and move it in `Anime_GAN-master/WGAN_keras/faces/`.
+I implement a keras version Anime_WGAN. Like DCGAN, you should download the [dataset](https://1drv.ms/u/s!AgBYzHhocQD4g0_Fr-mC-DYfWahJ) named **faces.zip**(the same as DCGAN), then execute the first step——Cloning the repository, and extract and move it in `Anime_GAN-master/WGAN_keras/faces/`.
 ## 1. Cloning the repository
 ```bash
 $ git clone https://github.com/FangYang970206/Anime_GAN.git
@@ -38,3 +39,31 @@ $ python wgan_keras.py
 ```
 ## 3. 100000 steps result
 ![](result/wgan_keras_result.png)
+# ConditionalGAN
+you need to download the [dataset](https://1drv.ms/u/s!AgBYzHhocQD4g3n4vJSQ9s6ZUZOQ) named **images.zip**, then execute the first step——Cloning the repository, and extract and move it in `Anime_GAN-master/ConditionalGAN/`.The tag.csv file is dataset label, include hair color and eye color.The test.txt is test label file used to generate test images.
+## 1. Cloning the repository
+```bash
+$ git clone https://github.com/FangYang970206/Anime_GAN.git
+$ cd Anime_GAN-master/ConditionalGAN/
+```
+## 2. run the code
+```bash
+$ python main.py --mode "train"
+$ python main.py --mode "infer"  #make sure you have trained the ConditionalGAN
+```
+## 3. 55000 steps result
+![](result/ConditionalGAN_55000.png)
+
+
+# Reference
+* [李宏毅GAN课程及PPT][1]
+* [DCGAN paper][2]
+* [chenyuntc][3]
+* [JasonYao81000][4]
+
+
+
+  [1]: http://speech.ee.ntu.edu.tw/~tlkagk/courses_MLDS18.html
+  [2]: http://arxiv.org/abs/1511.06434
+  [3]: https://github.com/chenyuntc/pytorch-GAN
+  [4]: https://github.com/JasonYao81000/MLDS2018SPRING/tree/master/hw3
