@@ -47,9 +47,10 @@ $ git clone https://github.com/FangYang970206/Anime_GAN.git
 $ cd Anime_GAN-master/ConditionalGAN/
 ```
 ## 2. run the code
+Two mode: train or infer. In infer mode, make sure you have trained the ConditionalGAN.
 ```bash
 $ python main.py --mode "train"
-$ python main.py --mode "infer"  #make sure you have trained the ConditionalGAN
+$ python main.py --mode "infer"  
 ```
 ## 3. 55000 steps result
 ![](result/ConditionalGAN_55000.png)
