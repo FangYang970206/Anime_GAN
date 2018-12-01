@@ -12,11 +12,11 @@ This repository records my GAN models with Anime.
 * cv2 -- `pip install opencv-python`(for ConditionalGAN)
 
 # DCGAN
-you need to download the [dataset](https://1drv.ms/u/s!AgBYzHhocQD4g0_Fr-mC-DYfWahJ) named **faces.zip**, then execute the first step——Cloning the repository, and extract and move it in `Anime_GAN-master/DCGAN/`.
+you need to download the [dataset](https://1drv.ms/u/s!AgBYzHhocQD4g0_Fr-mC-DYfWahJ) named **faces.zip**, then execute the first step——Cloning the repository, and extract and move it in `Anime_GAN/DCGAN/`.
 ## 1. Cloning the repository
 ```bash
 $ git clone https://github.com/FangYang970206/Anime_GAN.git
-$ cd Anime_GAN-master/DCGAN/
+$ cd Anime_GAN/DCGAN/
 ```
 ## 2. run the code
 ```bash
@@ -27,11 +27,11 @@ $ python main.py
 ---
 # WGAN
 The WGAN implemented by pytorch has bugs. If anyone can find them, i will appreciate you so much! 
-I implement a keras version Anime_WGAN. Like DCGAN, you should download the [dataset](https://1drv.ms/u/s!AgBYzHhocQD4g0_Fr-mC-DYfWahJ) named **faces.zip**(the same as DCGAN), then execute the first step——Cloning the repository, and extract and move it in `Anime_GAN-master/WGAN_keras/faces/`.
+I implement a keras version Anime_WGAN. Like DCGAN, you should download the [dataset](https://1drv.ms/u/s!AgBYzHhocQD4g0_Fr-mC-DYfWahJ) named **faces.zip**(the same as DCGAN), then execute the first step——Cloning the repository, and extract and move it in `Anime_GAN/WGAN_keras/faces/`.
 ## 1. Cloning the repository
 ```bash
 $ git clone https://github.com/FangYang970206/Anime_GAN.git
-$ cd Anime_GAN-master/WGAN_keras/
+$ cd Anime_GAN/WGAN_keras/
 ```
 ## 2. run the code
 ```bash
@@ -40,11 +40,11 @@ $ python wgan_keras.py
 ## 3. 100000 steps result
 ![](result/wgan_keras_result.png)
 # ConditionalGAN
-you need to download the [dataset](https://1drv.ms/u/s!AgBYzHhocQD4g3n4vJSQ9s6ZUZOQ) named **images.zip**, then execute the first step——Cloning the repository, and extract and move it in `Anime_GAN-master/ConditionalGAN/`.The tag.csv file is dataset label, include hair color and eye color.The test.txt is test label file used to generate test images.
+you need to download the [dataset](https://1drv.ms/u/s!AgBYzHhocQD4g3n4vJSQ9s6ZUZOQ) named **images.zip**, then execute the first step——Cloning the repository, and extract and move it in `Anime_GAN/ConditionalGAN/`.The tag.csv file is dataset label, include hair color and eye color.The test.txt is test label file used to generate test images.
 ## 1. Cloning the repository
 ```bash
 $ git clone https://github.com/FangYang970206/Anime_GAN.git
-$ cd Anime_GAN-master/ConditionalGAN/
+$ cd Anime_GAN/ConditionalGAN/
 ```
 ## 2. run the code
 Two mode: train or infer. In infer mode, make sure you have trained the ConditionalGAN.
