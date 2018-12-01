@@ -57,6 +57,7 @@ $ python main.py --mode "infer"
 
 
 # Reference
+
 * [李宏毅GAN课程及PPT][1]
 * [DCGAN paper][2]
 * [chenyuntc][3]
