@@ -12,7 +12,11 @@ This repository records my GAN models with Anime.
 * cv2 -- `pip install opencv-python`(for ConditionalGAN)
 
 # DCGAN
+<<<<<<< HEAD
 you need to download the dataset ([onedrive](https://1drv.ms/u/s!AgBYzHhocQD4g0_Fr-mC-DYfWahJ), or [baiduyun](https://pan.baidu.com/s/1X1VMRBOvAHX344g_8zds5w)) named **faces.zip**, then execute the first step——Cloning the repository, and extract and move it in `Anime_GAN/DCGAN/`.
+=======
+you need to download the dataset ([onedrive](https://1drv.ms/u/s!AgBYzHhocQD4g0_Fr-mC-DYfWahJ), or [baiduyun](https://pan.baidu.com/s/1X1VMRBOvAHX344g_8zds5w))named **faces.zip**, then execute the first step——Cloning the repository, and extract and move it in `Anime_GAN/DCGAN/`.
+>>>>>>> 1e2f8547549e3e4d9852cd5ca55dbf1bdfe1090e
 ## 1. Cloning the repository
 ```bash
 $ git clone https://github.com/FangYang970206/Anime_GAN.git
@@ -40,7 +44,11 @@ $ python wgan_keras.py
 ## 3. 100000 steps result
 ![](result/wgan_keras_result.png)
 # ConditionalGAN
+<<<<<<< HEAD
 you need to download the dataset ([onedrive](https://1drv.ms/u/s!AgBYzHhocQD4g3n4vJSQ9s6ZUZOQ) or [baiduyun](https://pan.baidu.com/s/1kej5gGf4LOziiq2HfHDFzA)) named **images.zip**, then execute the first step——Cloning the repository, and extract and move it in `Anime_GAN/ConditionalGAN/`.The tag.csv file is dataset label, include hair color and eye color.The test.txt is test label file used to generate test images.
+=======
+you need to download the dataset ([onedrive](https://1drv.ms/u/s!AgBYzHhocQD4g3n4vJSQ9s6ZUZOQ) or [baiduyun](https://pan.baidu.com/s/1kej5gGf4LOziiq2HfHDFzA))named **images.zip**, then execute the first step——Cloning the repository, and extract and move it in `Anime_GAN/ConditionalGAN/`.The tag.csv file is dataset label, include hair color and eye color.The test.txt is test label file used to generate test images.
+>>>>>>> 1e2f8547549e3e4d9852cd5ca55dbf1bdfe1090e
 ## 1. Cloning the repository
 ```bash
 $ git clone https://github.com/FangYang970206/Anime_GAN.git
@@ -59,11 +67,16 @@ $ python main.py --mode "infer"
 ![](ConditionalGAN/GUI.png)
 
 Before run GUI.py, you should train the conditionalGAN to get the `generate.t7`.
+<<<<<<< HEAD
 ```bash
+=======
+```python
+>>>>>>> 1e2f8547549e3e4d9852cd5ca55dbf1bdfe1090e
 $ python GUI.py
 ```
 
 # Reference
+
 * [李宏毅GAN课程及PPT][1]
 * [DCGAN paper][2]
 * [chenyuntc][3]
