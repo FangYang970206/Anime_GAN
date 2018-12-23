@@ -55,6 +55,13 @@ $ python main.py --mode "infer"
 ## 3. 55000 steps result
 ![](result/ConditionalGAN_55000.png)
 
+## 4. GUI
+![](ConditionalGAN/GUI.png)
+
+Before run GUI.py, you should train the conditionalGAN to get the `generate.t7`.
+```python
+$ python GUI.py
+```
 
 # Reference
 
