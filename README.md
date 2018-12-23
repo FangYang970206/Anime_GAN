@@ -56,7 +56,7 @@ $ python main.py --mode "infer"
 ![](result/ConditionalGAN_55000.png)
 
 ## 4. GUI
-![](ConditionalGAN/GUI.png)
+![](ConditionalGAN/GUI.jpg)
 
 Before run GUI.py, you should train the conditionalGAN to get the `generate.t7`.
 ```bash
