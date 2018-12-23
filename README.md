@@ -59,7 +59,7 @@ $ python main.py --mode "infer"
 ![](ConditionalGAN/GUI.png)
 
 Before run GUI.py, you should train the conditionalGAN to get the `generate.t7`.
-```python
+```bash
 $ python GUI.py
 ```
 
