@@ -15,7 +15,7 @@ class AnimeDataset(torch.utils.data.Dataset):
     def __getitem__(self, ind):
         path = self.data_files[ind]
         img = scipy.misc.imread(path)
-        img = img.transpose(2,0,1)-127.5/127.5
+        img = (img.transpose(2,0,1)-127.5)/127.5
         return img
 
     def __len__(self):
