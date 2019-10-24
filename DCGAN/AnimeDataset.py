@@ -22,7 +22,7 @@ class AnimeDataset(torch.utils.data.Dataset):
         return len(self.data_files)
 
 if __name__ == "__main__":
-    dataset = AnimeDataset(os.getcwd(),"anime",100)
+    dataset = AnimeDataset(os.getcwd(),"faces",100)
     loader = torch.utils.data.DataLoader(dataset, batch_size=10, shuffle=True,num_workers=4)
     for i, inp in enumerate(loader):
         print(i,inp.size())
